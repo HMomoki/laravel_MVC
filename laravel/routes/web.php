@@ -15,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/','HomeController@index')->name('home');
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/','HomeController@index')->name('home');
+    Route::name('auth.')->group(function () {
+        Route::get('/signup','Auth\RegisterController@signup')->name('signup');
+        Route::post('/signup','Auth\RegisterController@register')->name('register');
+    });
+});
 
+// Route::middleware(['verified'])->group(function () {
+
+// }
