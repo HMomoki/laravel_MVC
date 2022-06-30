@@ -7,8 +7,8 @@
             <div class="card">
                 <div class="card-header">Header</div>
 
-                <div class="card-body">
-                    ホームページ
+                <div id="app">
+                    <example-component></example-component>
                 </div>
             </div>
         </div>
