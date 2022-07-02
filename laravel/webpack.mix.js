@@ -17,6 +17,5 @@ mix.webpackConfig({
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/components/ExampleComponent.vue','public/js/components').vue()
+mix.ts('resources/js/app.ts', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
