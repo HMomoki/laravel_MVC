@@ -18,4 +18,6 @@ mix.webpackConfig({
  */
 
 mix.ts('resources/js/app.ts', 'public/js')
+    .js('resources/js/header.js','public/js').vue()
+    .js('resources/js/search.js','public/js').vue()
     .sass('resources/sass/app.scss', 'public/css');

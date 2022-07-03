@@ -1,18 +1,23 @@
 @extends('layouts.app')
 
+@section('header')
+<div id="header">
+    <header-component></header-component>
+</div>
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Header</div>
-
-                <div id="app">
-                    <example-component></example-component>
-                </div>
+            <div id="app">
+                <search-component></search-component>
             </div>
         </div>
     </div>
 </div>
-<script src="{{ mix('js/app.js') }}"></script>
+@endsection
+
+@section('scripts')
+<script src="{{ mix('js/header.js') }}"></script>
+<script src="{{ mix('js/search.js') }}"></script>
 @endsection
