@@ -14,11 +14,11 @@
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ログイン</a>
+                        <div class="nav-link" @click="login()">ログイン</div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">新規登録</a>
+                        <div class="nav-link" @click="signup()">新規登録</div>
                     </li>
                 </ul>
             </div>
@@ -28,7 +28,12 @@
 
 <script>
     export default {
-        mounted() {
-        }
+        methods: {
+            signup(){
+            },
+            login(){
+                
+            }
+        },
     }
 </script>

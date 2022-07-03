@@ -1,7 +1,7 @@
 <template>
     <form action="#" name="search" method="post">
         <dl class="search">
-            <dt><input type="text" name="search" value="" placeholder="検索するテキストを入力..." /></dt>
+            <dt><input type="text" name="search" placeholder="検索するテキストを入力..."/></dt>
             <dd><button>Search</button></dd>
         </dl>
     </form>
@@ -9,9 +9,6 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
     }
 </script>
 

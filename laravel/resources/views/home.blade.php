@@ -1,10 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-<div id="header">
-    <header-component></header-component>
-</div>
-@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -18,6 +13,5 @@
 @endsection
 
 @section('scripts')
-<script src="{{ mix('js/header.js') }}"></script>
 <script src="{{ mix('js/search.js') }}"></script>
 @endsection
